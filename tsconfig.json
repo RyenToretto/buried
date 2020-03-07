@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "target": "es5",
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": false,
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "lib": ["DOM", "ES7", "ES6"],
+    "declaration": true,
+    "outDir": "lib"
+  },
+  "include": ["src/index.ts"]
+}
