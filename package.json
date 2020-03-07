@@ -1,12 +1,11 @@
 {
   "name": "buried",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a buried point abstract interface library",
-  "main": "lib/buried.cjs.js",
-  "module": "lib/buried.esm.js",
+  "main": "lib/index.js",
   "scripts": {
     "start": "jest --watchAll",
-    "build": "rollup -c",
+    "build": "tsc",
     "test": "jest --coverage"
   },
   "keywords": [
