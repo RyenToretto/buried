@@ -160,7 +160,7 @@ var Store = (function () {
     };
     Store.prototype.report = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var res;
+            var res, options;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -170,7 +170,17 @@ var Store = (function () {
                         res = _a.sent();
                         this.reset();
                         return [2, res];
-                    case 2: return [2, Promise.resolve({})];
+                    case 2:
+                        if (window && window.fetch) {
+                            options = {
+                                method: 'POST'
+                            };
+                            return [2, fetch(this.options.url, options).then(function (res) {
+                                    console.log(res);
+                                    return res.json();
+                                })];
+                        }
+                        throw new Error('[Buried] need to provide report method for current environment!');
                 }
             });
         });

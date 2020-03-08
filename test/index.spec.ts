@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import Buried from '../src';
 import { BuriedData } from '../src/store';
 

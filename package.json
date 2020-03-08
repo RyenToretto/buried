@@ -1,13 +1,13 @@
 {
   "name": "buried",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "a buried point abstract interface library",
   "main": "dist/buried.cjs.js",
   "module": "dist/buried.es.js",
-  "types": "dist/index.ts",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "start": "jest --watchAll",
-    "build": "rollup -c",
+    "build": "rm -rf dist/* && rollup -c",
     "test": "jest --coverage"
   },
   "keywords": [
@@ -31,5 +31,8 @@
     "rollup-plugin-typescript2": "^0.26.0",
     "tslint": "^6.0.0",
     "typescript": "^3.8.3"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }

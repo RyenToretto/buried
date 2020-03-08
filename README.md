@@ -1,5 +1,7 @@
 # Buried
 
+![license](https://img.shields.io/github/license/YES-Lee/buried?style=flat-square) ![size](https://img.shields.io/bundlephobia/min/buried?style=flat-square) ![release](https://img.shields.io/github/v/release/YES-Lee/buried?style=flat-square)
+
 前端数据埋点工具
 
 ## 适用范围
@@ -19,10 +21,18 @@
 
 ## 安装
 
+模块化引入
+
 ```bash
 npm install buried
 # 或
 yarn add buried
+```
+
+标签引入
+
+```html
+<script src="https://unpkg.com/buried@0.0.3/dist/buried.min.js"></script>
 ```
 
 ## 使用

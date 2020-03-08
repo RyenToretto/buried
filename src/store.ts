@@ -114,7 +114,16 @@ export class Store<TData> {
       this.reset();
       return res;
     }
-    return Promise.resolve({} as TReturn);
+    if (window && window.fetch) {
+      const options: RequestInit = {
+        method: 'POST'
+      };
+      return fetch(this.options.url, options).then(res => {
+        console.log(res);
+        return res.json();
+      });
+    }
+    throw new Error('[Buried] need to provide report method for current environment!');
   }
 
 }
