@@ -32,7 +32,7 @@ yarn add buried
 标签引入
 
 ```html
-<script src="https://unpkg.com/buried@0.0.3/dist/buried.min.js"></script>
+<script src="https://unpkg.com/buried@0.0.6/dist/buried.min.js"></script>
 ```
 
 ## 使用
@@ -72,3 +72,7 @@ buried.report() // 手动上报数据
 |public stop()|||停止自动上报|
 |public start()|||启动自动上报|
 |public reset()|||清空缓存数据|
+
+## LICENSE
+
+[MIT for Johnson](https://github.com/YES-Lee/buried/blob/master/LICENSE)

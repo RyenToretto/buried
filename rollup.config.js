@@ -11,7 +11,7 @@ export default {
       sourcemap: true
     },
     {
-      format: 'es',
+      format: 'esm',
       file: pkg.module,
       sourcemap: true
     },
@@ -19,15 +19,15 @@ export default {
       format: 'umd',
       file: 'dist/buried.min.js',
       name: 'Buried',
-      sourcemap: false
+      sourcemap: false,
+      plugins: [
+        terser()
+      ]
     }
   ],
   plugins: [
     typescript({
       typescript: require('typescript')
-    }),
-    terser({
-      include: [/^.+\.min\.js$/]
     })
   ]
 };

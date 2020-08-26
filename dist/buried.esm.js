@@ -180,7 +180,7 @@ var Store = (function () {
                                     return res.json();
                                 })];
                         }
-                        throw new Error('[Buried] need to provide report method for current environment!');
+                        throw new Error('[Buried] need to provide a http request adepter for current environment!');
                 }
             });
         });
@@ -300,4 +300,4 @@ var Buried = (function () {
 }());
 
 export default Buried;
-//# sourceMappingURL=buried.es.js.map
+//# sourceMappingURL=buried.esm.js.map

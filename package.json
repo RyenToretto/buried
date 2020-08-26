@@ -1,9 +1,9 @@
 {
   "name": "buried",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "a buried point abstract interface library",
   "main": "dist/buried.cjs.js",
-  "module": "dist/buried.es.js",
+  "module": "dist/buried.esm.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "start": "jest --watchAll",
